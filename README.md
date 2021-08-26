@@ -1,14 +1,14 @@
-# BlueApps
-An open source based Architecture for combining Web technology and Python Backend
+# BinrApps
+Binr (pronounced as Biner) is an open source based Architecture for combining Web technology and Python Backend
 
 ---
 
-### What is BlueApps?
-Blorch Apps is an alternative to Electron. It utilizes web technologies for front end and uses Python as Backend Instead of NodeJS.
+### What is BinrApps?
+Binr Apps is an alternative to Electron. It utilizes web technologies for front end and uses Python as Backend Instead of NodeJS.
 
 ---
 
-### 5 reasons to choose BlueApps:
+### 5 reasons to choose BinrApps:
 + Open Source
 + Use Chrome/Chromium Tools in Web Render
 + Easy Encryption Tools Provided
@@ -18,7 +18,31 @@ Blorch Apps is an alternative to Electron. It utilizes web technologies for fron
 
 ---
 
-### An IOX Open Source Initiative: BlueApps
+### What App can I make with Binr?
+Binr is just a combiner of your core app and Frontend.
+Binr does take all Python , JS, CSS and HTML code
+
+
+---
+### Do you need to learn any specific language for Binr?
+
+No, you have to have a good knowledge in Python, JS, HTML, CSS and your work is done.
+You can use any module or library, APIs.
+Though a modules like Eel and PyInstaller is required but our Packager takes care.
+Binr is just a Packaging and UI Framework for app distribution.
+
+---
+### Liabilities in Binr Apps
+
+Similar to others. If any wrong Application is downloaded by user then it might lead to Misuse.
+This might have potential to harm the users.
+Though we have make a system in Packaging to remove Malecious and Suspecious files user must be careful for what's been installed.
+
+Binr Apps shows weather the App is been Verified or Not. If not then user must take his own risk to perform these actions.
+
+---
+
+### An IOX Open Source Initiative: BinrApps
 
 ---
 
