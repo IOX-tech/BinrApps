@@ -18,10 +18,21 @@ Binr Apps is an alternative to Electron. It utilizes web technologies for front 
 
 ---
 
-### What App can I make with Binr?
-Binr is just a combiner of your core app and Frontend.
-Binr does take all Python , JS, CSS and HTML code
+### How should you code a Binr App?
 
+Well, making app just consists of coding to provide the desired functionality.
+Just ensure your Backend part is working fine.
+Run <code>studio.sh</code>
+
+    ~$ bash studio.sh
+
+Make sure you have designed your <code>studio.bind</code>
+
+    # Run binding for Binr;
+    output = ....../path_for_file;
+    backend = ....../ Python_files/main.py;
+    front = ......../web_files;
+    encryption = True;
 
 ---
 ### Do you need to learn any specific language for Binr?
