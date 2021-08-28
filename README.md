@@ -22,9 +22,9 @@ Binr Apps is an alternative to Electron. It utilizes web technologies for front 
 
 Well, making app just consists of coding to provide the desired functionality.
 Just ensure your Backend part is working fine.
-Run <code>studio.sh</code>
+Run <code>studio.sh</code> and enter the required enquiries
 
-    ~$ bash studio.sh
+    ~$ bash studio.sh -path/folder -app.bind = True
 
 Make sure you have designed your <code>studio.bind</code>
 
@@ -34,6 +34,19 @@ Make sure you have designed your <code>studio.bind</code>
     front = ......../web_files;
     encryption = True;
 
+However you could learn these in detail: docs/build.md
+
+---
+
+### Security Error:
+
+You may face a problem of <code>security-error</code>
+This is due to the Malecious actions and files in your App.
+However, you will be able to produce an app but a pop will appear to the people that your App is been suspicious.
+Users can still install by clicking on <code>Accept Risk</code>.
+
+For this refer to docs/rules.md
+
 ---
 ### Do you need to learn any specific language for Binr?
 
@@ -42,6 +55,16 @@ You can use any module or library, APIs.
 Though a modules like Eel and PyInstaller is required but our Packager takes care.
 Binr is just a Packaging and UI Framework for app distribution.
 
+---
+
+### While opening the App for first time why does it take so long?
+
+Yes, though the App takes very much time on the first open.
+This is due to the <code>post-install</code> requirements.
+
+This will soon be fixed. Using <code>onlaunch</code> feature present in Binr
+
+---
 ### Libilities in Binr Apps
 
 Similar to others. If any wrong Application is downloaded by user then it might lead to Misuse.
@@ -57,4 +80,7 @@ Binr Apps shows weather the App is been Verified or Not. If not then user must t
 ---
 
 ### License:
+
  <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+<code>CC-BY-SA</code>
