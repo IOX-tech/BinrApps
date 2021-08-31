@@ -38,6 +38,46 @@ However you could learn these in detail: docs/build.md
 
 ---
 
+### Cross Platform in Binr
+
+![alt text](https://img.shields.io/badge/Windows-Working-dark--green)
+![alt text](https://img.shields.io/badge/MacOS-Working-dark--green)
+![alt text](https://img.shields.io/badge/Linux-Working-dark--green)
+
+![alt text](https://img.shields.io/badge/ARM%20on%20Linux%2C%20Windows%2C%20%20MacOS-Failing-critical)
+
+The ARM Native will be available when the <code>PyInstaller</code> for ARM is introduced.
+
+---
+
+### More Open , More Choices
+
+Web technologies are been improving day by day.
+Various Tech Giants have put most of the efforts in Web.
+
+The Binr removes the Barrier between Web and Apps.
+You can use the same libraries, frameworks and styles, fonts.
+
+Use your favorite:
+ React JS
+, Angular JS
+, Vue JS
+, Brython
+, Bootstrap
+, Onxx JS
+, TensorFlow JS
+, p5 JS
+And much more JS libraries
+
+<h4>Pre-installed</h4>
+
+Your favorites loaded by default. The Integrated characters, fonts and styles makes easy to use.
+
++ Open Moji
++ Font Awesome
+
+ 
+---
 ### Security Error:
 
 You may face a problem of <code>security-error</code>
