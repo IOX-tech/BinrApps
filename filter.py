@@ -6,9 +6,9 @@ import sys
 
 from os import path,walk
 
-outPATH = "/home/phio/Documents/work/BinrApps/client-scripts/core"
+outPATH = None
 
-inPATH = "/home/phio/Documents/work/BinrApps/client-scripts/front"
+inPATH = None # Collect data Dynamically using studio.bind
 
 filenames = next(walk(outPATH), (None, None, []))[2]
 
@@ -16,9 +16,17 @@ filenamesIn = next(walk(inPATH), (None, None, []))[2]
 
 filenames.extend(filenamesIn)
 
-print("Processing...")
+# print("Processing...")
 
-default_files = (".py",".html",".css",".js","studio.bind")
+# Remove unwanted Files...
+default_files = (".py",".html",".css",".js",".bind",".json",".txt",".md")
+for files in filenames:
+    for df in default_files:
+            if files.endswith(df):
+                pass
+            else:
+                filenames.remove(files)
+
 
 python_files = []
 html_files = []
@@ -41,5 +49,24 @@ for file in filenames:
     else:
         other_files.append(file)
 
-#Removing unwanted files
-"ToDo"
+def args_py():
+    for py_f in python_files:
+        return py_f
+
+def args_html():
+    for hfi in html_files:
+        return hfi
+
+def args_css():
+    for cf in css_files:
+        return cf
+
+def args_js():
+    for jf in js_files:
+        return jf
+
+def args_oth():
+    for of in other_files:
+        return of
+
+# use from filter import *
