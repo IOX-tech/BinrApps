@@ -1,32 +1,34 @@
 # Program for Encrypt all files
 
-from abc import abstractproperty
-import os
-import sys
+from os import walk
+from time import sleep
 
-from os import path,walk
+PATH = "/home/phio/Documents/work/BinrApps/test_example" # Collect data Dynamically using studio.bind
 
-outPATH = None
+files = []
 
-inPATH = None # Collect data Dynamically using studio.bind
+files1 = next(walk(PATH),(None,None,[]))[2]
 
-filenames = next(walk(outPATH), (None, None, []))[2]
+if PATH.endswith('/'):
+    for file in files1:
+        files.append(PATH+file)
+else:    
+    for file in files1:
+        files.append(PATH+"/"+file)
 
-filenamesIn = next(walk(inPATH), (None, None, []))[2]
+# Examining the subfolders:
 
-filenames.extend(filenamesIn)
+subdirs = [x[0] for x in walk(PATH)]
+# print(subdirs)
 
-# print("Processing...")
+for anyDir in subdirs:
+    filenames = next(walk(anyDir), (None, None, []))[2]
+    for filename in filenames:
+        files.append(anyDir+"/"+filename)
 
-# Remove unwanted Files...
-default_files = (".py",".html",".css",".js",".bind",".json",".txt",".md")
-for files in filenames:
-    for df in default_files:
-            if files.endswith(df):
-                pass
-            else:
-                filenames.remove(files)
+# print(files)
 
+filenames = files
 
 python_files = []
 html_files = []
@@ -37,36 +39,48 @@ other_files = []
 
 for file in filenames:
     if file.endswith(".py"):
+        sleep(0.3)
         python_files.append(file)
+        print(file,"is recognized as python code")
     elif file.endswith(".html"):
+        sleep(0.4)
+        print(file,"is recognized as HTML code")
         html_files.append(file)
     elif file.endswith(".css"):
+        sleep(0.6)
+        print(file,"is recognized as CSS code")
         css_files.append(file)
-    elif file.endswith(".js"):
+    elif file.endswith(".js") or file.endswith(".jsx"):
+        sleep(0.4)
+        print(file,"is recognized as JS code")
         js_files.append(file)
     elif file==("studio.bind"):
+        sleep(0.8)
+        print(file,"is recognized as Binr code")
         binr_en.append(file)
     else:
+        sleep(1)
+        print(file,"is recognized as OTHERS")
         other_files.append(file)
 
-def args_py():
-    for py_f in python_files:
-        return py_f
+python_files,js_files,html_files,css_files,binr_en,other_files = list(set(python_files)),list(set(js_files)),list(set(html_files)),list(set(css_files)),list(set(binr_en)),list(set(other_files))
 
-def args_html():
-    for hfi in html_files:
-        return hfi
+trash = []
 
-def args_css():
-    for cf in css_files:
-        return cf
+for others in other_files:
+    if others.endswith("studio.bind") or others.endswith(".json") or others.endswith(".txt") or others.endswith(".md"):
+        pass
+    else:
+        trash.append(others)
 
-def args_js():
-    for jf in js_files:
-        return jf
+for waste in trash:
+    sleep(1)
+    print("Could not recognize",waste,".File is been not included.")
+    other_files.remove(waste)
 
-def args_oth():
-    for of in other_files:
-        return of
+other_files = other_files
+
 
 # use from filter import *
+
+# print(python_files,js_files,html_files,css_files,other_files)
