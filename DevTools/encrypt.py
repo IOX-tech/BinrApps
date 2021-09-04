@@ -4,8 +4,8 @@ import os
 for pyf in filter.python_files:
     p_stmt = None # i don't know how to covert .py to .pyo
     os.system(p_stmt+pyf)
-    os.remove(pyf)
-    os.rename(pyf+"o",pyf)
+    # os.remove(pyf)
+    # os.rename(pyf+"o",pyf)
 
 
 def encrypt_html(html):

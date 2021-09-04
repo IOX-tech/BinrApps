@@ -1,9 +1,12 @@
 # Program for Encrypt all files
 
+from __studio__ import formBy
 from os import walk
 from time import sleep
 
-PATH = "/home/phio/Documents/work/BinrApps/test_example" # Collect data Dynamically using studio.bind
+
+
+PATH = formBy # Collect data Dynamically using studio.bind
 
 files = []
 
@@ -81,6 +84,5 @@ for waste in trash:
 other_files = other_files
 
 
-# use from filter import *
 
-# print(python_files,js_files,html_files,css_files,other_files)
+# use from filter import *
