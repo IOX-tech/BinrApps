@@ -1,0 +1,13 @@
+The Idea of server and communicating betweeen Python Code and JavaScriot code was borrowed from Eel
+Infact, the Binr-CEF is a forked version of Eel
+
+More About Eel:
++ Author: ChrisKnott
++ Open Source
++ GitHub Repo: github.com/ChrisKnott/Eel/
+
+However, the Binr-CEF is fully optimized for BinrApps and hence it is the official linker between Python and JS in Binr-BinrApps
+
+The same procedures as Eel can be used with some Moderations.
+
+Eel thankyou very much this project is not possible without you :)
